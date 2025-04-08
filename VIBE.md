@@ -154,6 +154,20 @@ Use these prompts as detailed guides for common tasks.
 
 ---
 
+### `UPDATE_DOC`
+
+*(Guidance: Use **ARCHITECT** or **CODE** mode. Refer to General Conventions.)*
+
+**Task:** Analyze the referenced script (if a single one is provided) or each script file in the referenced folder and perform the following tasks one by one:
+
+1.  **Documentations:** Create or update the `DOC.md` with a full documentation for this script/project in order to be used to guide AI Agents to understand the code and its behavior and use its functionality. 
+
+**Also:**
+
+1.  **README:** Update the `README.md` file to include link to the `DOC.md`.
+
+---
+
 ### `REVIEW_README`
 
 *(Guidance: Use **ASK** or **ARCHITECT** mode. **DO NOT MODIFY ANY CODE**.)*
