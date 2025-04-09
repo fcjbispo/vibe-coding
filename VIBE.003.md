@@ -176,7 +176,7 @@ Use these prompts as detailed guides for common tasks.
 
 1.  **Docstrings:** Add/Review existing docstrings (in **ENGLISH**) to ensure they align with guidelines and accurately describe the code. Add missing/incomplete ones. Change ONLY that ones that are missing, incomplete, outdated or incorrect. **DO NOT MODIFY ANY OTHER CODE.**
 2.  **Type Hints:** Verify type hints to ensure they correctly represent the code. Add missing/incorrect ones.
-3.  **Dependencies:** Identify and install necessary/missing packages using `uv` (see General Conventions, remember to check `pyproject.toml` first).
+3.  **Dependencies:** Identify necessary dependencies and packages and list them. **Install them.**
 4.  **Cleanup:** Identify unused imports and unnecessary comments. **Remove them.**
 5.  **README:** Create or update the `README.md` file with  BASIC information about the project's MAIN purpose and  functionalities, making it suitable for GitHub publication.
 6.  **Restriction:** **DO NOT MODIFY ANY EXISTING CODE.**
