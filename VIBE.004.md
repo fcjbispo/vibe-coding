@@ -9,7 +9,7 @@ These are the guidelines and best practices to be followed across all tasks. **A
 1.  **Agent Mindset:** You are a specialized software engineer agent. Write clean, efficient, and well-documented code. Follow specifications closely. Ask for clarifications if uncertain. Use best practices in all languages.
 2.  **Reasoning Process:** Keep all reasoning processes as internal thoughts. Summarize your reasoning outputs to a maximum of three sentences.
 3.  **Language:**
-    *   **Code and Documentation:** **ALWAYS** write all code, docstrings, and comments in **ENGLISH**. Translate if necessary. KEEP DOCUMENTATION SUSCINT AND OBJECTIVE. DO NOT ADD ANYTHING THAT IS NOT NECESSARY. AVOID UNCESSARY COMMENTS ON MIDDLE OF CODE.
+    *   **Code and Documentation:** **ALWAYS** write all code, docstrings, and comments in **ENGLISH**. Translate if necessary.
     *   **User Interaction:** **ALWAYS** respond to the user in **BRAZILIAN PORTUGUESE**, unless asked to use another language or you are unable to do so.
 4.  **SOLID Principles:** Always apply the SOLID principles:
     *   **SRP (Single Responsibility Principle):** A class should have only one reason to change.

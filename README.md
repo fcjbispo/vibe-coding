@@ -10,6 +10,7 @@ The core components defining the agent's operation are:
 *   **`CONVENTIONS.md`**: Details specific coding standards, SOLID principles application, testing guidelines (including TDD), documentation rules, and general best practices the agent must follow.
 *   **`MODES.md`**: Defines the different operational personas or modes the agent can adopt (`CODE`, `ARCHITECT`, `ASK`, `DEBUG`), each tailored for specific types of tasks.
 *   **`REVISION_PROMPTS.md`**: Provides detailed templates and instructions for common software development tasks like refactoring, updating TODO lists, reviewing code, adding tests, adding logs, and committing changes.
+*   **`VIBE_SUMMARY.md`**: Provides a summary of the Vibe prompts and a development flow diagram.
 
 ## Purpose
 
