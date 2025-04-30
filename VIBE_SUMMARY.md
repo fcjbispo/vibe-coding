@@ -20,20 +20,20 @@ Prompts that are not part of the main sequential development flow but serve util
 
 ## Vibe Development Flow
 
-```mermaid
+::: mermaid
 graph TD
     A[Start] --> B{New Application?};
     B -- Yes --> C[PLAN_NEW_PROJECT];
     C --> D[Define Requirements/Scope];
     D --> E[Propose Architecture/Technology];
-    E --> F[Plan Tests (TDD)];
+    E --> F[Plan Tests TDD];
     F --> G[Plan Documentation];
     G --> H[Review and Finalize Plan];
     H --> I{Plan Approved?};
     I -- Yes --> J[Start Implementation];
-    I -- No --> D; %% Plan revision loop
-
-    B -- No --> J[Start Implementation]; %% If not a new application, go directly to implementation/review
+    I -- No --> D;
+    
+    B -- No --> J[Start Implementation];
 
     J --> K{Development/Review Task?};
     K -- Yes --> L{Which Task?};
@@ -44,16 +44,16 @@ graph TD
     L -- Update Documentation --> Q[UPDATE_DOC];
     L -- Update TODO --> R[UPDATE_TODO];
 
-    M --> K; %% After refactoring, other tasks may follow
-    N --> K; %% After reviewing README, other tasks may follow
-    O --> K; %% After reviewing tests, other tasks may follow
-    P --> K; %% After adding logs, other tasks may follow
-    Q --> K; %% After updating documentation, other tasks may follow
-    R --> K; %% After updating TODO, other tasks may follow
+    M --> K;
+    N --> K;
+    O --> K;
+    P --> K;
+    Q --> K;
+    R --> K;
 
-    K -- No --> U[End]; %% If no more development/review tasks
+    K -- No --> U[End];
 
-    %% Utility prompts are not part of the main flow but can be used anytime
     subgraph Utility Prompts
         S[COMMIT_CHANGES]
     end
+:::
