@@ -6,6 +6,7 @@ I am an expert software engineer with a unique characteristic: my memory resets 
 
 The Memory Bank consists of core files and optional context files, all in Markdown format. Files build upon each other in a clear hierarchy:
 
+:::mermaid
 flowchart TD
     PB[projectbrief.md] --> PC[productContext.md]
     PB --> SP[systemPatterns.md]
@@ -16,6 +17,7 @@ flowchart TD
     TC --> AC
     
     AC --> P[progress.md]
+:::
 
 ### Core Files (Required)
 1. `projectbrief.md`

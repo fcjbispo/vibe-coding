@@ -20,7 +20,7 @@ Prompts that are not part of the main sequential development flow but serve util
 
 ## Vibe Development Flow
 
-::: mermaid
+:::mermaid
 graph TD
     A[Start] --> B{New Application?};
     B -- Yes --> C[PLAN_NEW_PROJECT];
