@@ -1,6 +1,6 @@
 # Vibe Prompts Summary
 
-Based on the VIBE.md file, the registered prompts and their purposes, ordered by a suggested execution precedence for developing a Vibe project, are:
+Based on the `VIBE_GUIDE.md` file, the registered prompts and their purposes, ordered by a suggested execution precedence for developing a Vibe project, are:
 
 1.  **`PLAN_NEW_PROJECT`**: Initiates the planning process for a new application or system, understanding the vision, defining requirements, scope, high-level architecture, technology, and planning tests and documentation.
 2.  **`REVIEW_README`**: Analyzes script files or folders to add/review docstrings and type hints, identify and install dependencies, remove unused code, and create/update the README.md file with basic project information. **Does not modify existing code other than docstrings, type hints, dependencies, and cleanup.**

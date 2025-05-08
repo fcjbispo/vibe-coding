@@ -6,10 +6,7 @@ This repository contains the configuration files, operational guidelines, and st
 
 The core components defining the agent's operation are:
 
-*   **`VIBE.md`**: The central guide outlining general conventions, SOLID principles, testing strategies, dependency management (`uv`), logging practices, operational modes, and specific task prompts. This is the primary instruction set.
-*   **`CONVENTIONS.md`**: Details specific coding standards, SOLID principles application, testing guidelines (including TDD), documentation rules, and general best practices the agent must follow.
-*   **`MODES.md`**: Defines the different operational personas or modes the agent can adopt (`CODE`, `ARCHITECT`, `ASK`, `DEBUG`), each tailored for specific types of tasks.
-*   **`REVISION_PROMPTS.md`**: Provides detailed templates and instructions for common software development tasks like refactoring, updating TODO lists, reviewing code, adding tests, adding logs, and committing changes.
+*   **`VIBE_GUIDE.md`**: The unified central guide outlining all operational guidelines, conventions, memory bank structure, SOLID principles, testing strategies, dependency management (`uv`), logging practices, operational modes, and specific task prompts. This is the primary instruction set.
 *   **`VIBE_SUMMARY.md`**: Provides a summary of the Vibe prompts and a development flow diagram.
 
 ## Purpose
@@ -33,7 +30,7 @@ The goal of this configuration is to ensure the AI agent operates consistently, 
 *   **Logging:** Integrated for debugging and monitoring.
 *   **Clean Code:** Focus on readability, maintainability, and avoiding duplication.
 
-Refer to the individual `.md` files for detailed specifications on each aspect.
+Refer to the `VIBE_GUIDE.md` file for detailed specifications.
 This project is licensed under the MIT License. For the full text of the license, see [the official MIT License](https://opensource.org/licenses/MIT).
 
 ---
@@ -46,4 +43,3 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 **THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.**
-
