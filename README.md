@@ -19,7 +19,7 @@ The goal of this configuration is to ensure the AI agent operates consistently, 
 *   **Testing:** Implementing comprehensive unit tests using `pytest` with high coverage.
 *   **Debugging:** Systematically diagnosing and resolving issues.
 *   **Documentation:** Maintaining clear and accurate project documentation.
-*   **Version Control:** Using `git` effectively for managing changes.
+*   **Version Control:** Using `git` effectively for managing changes, including checkpointing.
 
 ## Key Principles
 
