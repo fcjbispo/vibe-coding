@@ -81,7 +81,7 @@ flowchart TD
    - Evolution of project decisions
 
 ### Additional Context
-Create additional files/folders within memory-bank/ when they help organize:
+Create additional files/folders within memory_bank/ when they help organize:
 - Complex feature documentation
 - Integration specifications
 - API documentation
