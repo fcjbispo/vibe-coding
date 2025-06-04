@@ -159,20 +159,18 @@ These are the guidelines and best practices to be followed across all tasks. **A
     *   **Code and Documentation:** **ALWAYS** write all code, docstrings, and comments in **ENGLISH**. Translate if necessary. KEEP DOCUMENTATION SUSCINT AND OBJECTIVE. DO NOT ADD ANYTHING THAT IS NOT NECESSARY. AVOID UNCESSARY COMMENTS ON MIDDLE OF CODE.
     *   **User Interaction:** **ALWAYS** respond to the user in **BRAZILIAN PORTUGUESE**, unless asked to use another language or you are unable to do so.
 4.  **SOLID Principles:** Always apply the SOLID principles:
-    *   **SRP (Single Responsibility Principle):** A module, class, or function should have only one reason to change.
+    *   **SRP (Single Responsibility Principle):** A class should have only one reason to change.
     *   **OCP (Open/Closed Principle):** Software entities should be open for extension but closed for modification.
-    *   **LSP (Liskov Substitution Principle):** Subtypes must be substitutable for their base types without altering the correctness of the program.
+    *   **LSP (Liskov Substitution Principle):** Subtypes must be substitutable for their base types.
     *   **ISP (Interface Segregation Principle):** Clients should not be forced to depend on interfaces they do not use.
-    *   **DIP (Dependency Inversion Principle):** High-level modules should not depend on low-level modules. Both should depend on abstractions. Abstractions should not depend on details. Details should depend on abstractions.
-5.  **Clean Code Principles:** Always strive for clean, readable, and maintainable code:
-    *   **Meaningful Names:** Use descriptive and unambiguous names for variables, functions, classes, and other identifiers. Names should convey intent and purpose.
-    *   **Small and Focused Units:** Functions, methods, and classes should be small and have a single, clear responsibility.
-    *   **Avoid Duplication (DRY - Don't Repeat Yourself):** Eliminate redundant code by creating reusable abstractions or functions.
-    *   **Error Handling:** Implement robust and explicit error handling mechanisms. Errors should be handled gracefully and provide clear feedback.
-    *   **Minimal Comments:** Write self-documenting code. Use comments only to explain "why" a piece of code exists, not "what" it does.
-    *   **Consistent Formatting:** Maintain a consistent code style and formatting throughout the codebase.
-6.  **Language-Specific Guidelines:** When a specific programming language or platform is provided for a task, always consult the corresponding `VIBE_ESPECIFICS_<LANGUAGE>.md` file (e.g., `VIBE_ESPECIFICS_PYTHON.md`, `VIBE_ESPECIFICS_JAVA.md`) for complementary instructions, tools, and best practices. If such a file is not explicitly referenced, search for it in the project's root directory.
-7.  **Environment and Dependency Management:**
+    *   **DIP (Dependency Inversion Principle):** High-level modules should not depend on low-level modules. Both should depend on abstractions.
+5.  **Environment and Dependency Management (Python):**
+    *   **ALWAYS** check if a virtual environment exists and activate it before running commands (`source .venv/bin/activate` or similar).
+    *   **ALWAYS** use the `uv` tool to manage packages and run Python code.
+    *   Use `uv add [package_name]` for regular dependencies.
+    *   Use `uv add --group dev [package_name]` for development dependencies (e.g., `pytest`, `pytest-cov`).
+    *   **ALWAYS** read the `@pyproject.toml` file before determining what should be installed to avoid duplication or conflicts.
+6.  **Code:**
     *   Use types (type hints) whenever possible. Verify and add missing or incorrect type hints.
     *   Prioritize using existing libraries over creating new code.
     *   Avoid code duplication. Check other areas of the codebase for similar functionality.
@@ -191,19 +189,20 @@ These are the guidelines and best practices to be followed across all tasks. **A
     *   Use appropriate log levels (`DEBUG`, `INFO`, `WARNING`, `ERROR`, `CRITICAL`).
     *   Replace `print()` with logging calls when appropriate for debugging or flow information.
 9.  **Testing:**
+    *   Use `pytest` for tests and `pytest-cov` for code coverage in Python.
     *   Follow testing principles (Isolation, Descriptive Names, Arrange-Act-Assert, Edge Cases, Mocking, Small & Focused Tests, Setup/Teardown, Automation, Documentation).
     *   **ALWAYS** use the system's temporary folder when creating files/objects for testing.
     *   **Code coverage MUST be >= 90%** for new features or revised modules.
-    *   Prefer functions for implementing test cases; avoid test classes if possible.
+    *   Use functions to implement test cases; avoid test classes if possible.
     *   Break tests into smaller files (max 450 lines) if necessary.
     *   **Test Driven Development (TDD) Approach:** When planning (see section below) and developing, define tests or testable acceptance criteria *before* writing the implementation code.
-    *   Ensure the isolated development environment is activated before running tests.
+    *   Ensure the virtual environment is activated before running tests.
     *   **ALWAYS USE THE SYSTEM TEMPORARY FOLDER** for test files/objects.
-    *   Prefer functions for tests; avoid test classes if possible.
+    *   Use functions for tests; avoid test classes if possible.
     *   Keep test files small (max 450 lines), breaking down scenarios if necessary.
-    *   Execute full tests using the appropriate command for the language/platform.
-    *   Execute specific test scripts using the appropriate command for the language/platform.
-    *   When encountering test errors, address them systematically until they pass.
+    *   Execute full tests with: `uv run pytest -s -vv --cov=<module_name> --cov-report=xml:coverage.xml --cov-report=html:coverage_html --cov-fail-under=90 tests/`
+    *   Execute specific script tests with: `uv run pytest -s -vv --cov=<module_name> --cov-report=xml:coverage.xml --cov-report=html:coverage_html --cov-fail-under=90 tests/<test_script>`
+    *   When encountering test errors, tackle them one by one until they pass: `uv run pytest -s -vv -k <scenario> tests/<test_script>`
     *   **Advanced Testing Paradigms:**
         *   **Modified Condition/Decision Coverage (MC/DC):**
             *   **Definition:** MC/DC is a code coverage criterion that requires every condition in a decision to have been shown to independently affect the outcome of the decision. This means that for each condition, there must be test cases where the condition's value alone causes the decision's outcome to change, while all other conditions in the decision remain fixed.
@@ -260,7 +259,7 @@ This section details the operational prompts available to the AI Agent, outlinin
 
 1.  **Docstrings:** Add/Review existing docstrings in functions and classes to ensure they align with the defined guidelines (in **ENGLISH**) and accurately describe the corresponding code. Add any missing or incomplete docstrings.
 2.  **Type Hints:** Verify type hints to ensure they correctly represent the function/method code. Add any missing or incorrect type hints.
-3.  **Dependencies:** Identify necessary dependencies and packages for the script and add them to the project using the appropriate dependency management tool (see General Conventions).
+3.  **Dependencies:** Identify necessary dependencies and packages for the script and add them to the project using the `uv` tool (see General Conventions).
 4.  **Cleanup:** Remove unused imports and unnecessary comments.
 5.  **Behavior:** **GUARANTEE THAT THE PREVIOUS BEHAVIOR OF THE ORIGINAL MODULE IS MAINTAINED.**
 
@@ -300,7 +299,7 @@ This section details the operational prompts available to the AI Agent, outlinin
 
 1.  **Docstrings:** Add/Review existing docstrings (in **ENGLISH**) to ensure they align with guidelines and accurately describe the code. Add missing/incomplete ones. Change ONLY that ones that are missing, incomplete, outdated or incorrect. **DO NOT MODIFY ANY OTHER CODE.**
 2.  **Type Hints:** Verify type hints to ensure they correctly represent the code. Add missing/incorrect ones.
-3.  **Dependencies:** Identify and install necessary/missing packages using the appropriate dependency management tool (see General Conventions, remember to consult the project's dependency manifest file first).
+3.  **Dependencies:** Identify and install necessary/missing packages using `uv` (see General Conventions, remember to check `pyproject.toml` first).
 4.  **Cleanup:** Identify unused imports and unnecessary comments. **Remove them.**
 5.  **README:** Create or update the `README.md` file with  BASIC information about the project's MAIN purpose and  functionalities, making it suitable for GitHub publication.
 6.  **Restriction:** **DO NOT MODIFY ANY EXISTING CODE.**
@@ -315,7 +314,7 @@ This section details the operational prompts available to the AI Agent, outlinin
 
 1.  **Docstrings:** Add/Review existing docstrings (in **ENGLISH**) to ensure they align with guidelines and accurately describe the code. Add missing/incomplete ones.
 2.  **Type Hints:** Verify type hints to ensure they correctly represent the code. Add missing/incorrect ones.
-3.  **Dependencies:** Identify and install necessary/missing packages using the appropriate dependency management tool (see General Conventions, remember to consult the project's dependency manifest file first).
+3.  **Dependencies:** Identify and install necessary/missing packages using `uv` (see General Conventions, remember to check `pyproject.toml` first).
 4.  **Cleanup:** Remove unused imports.
 5.  **Unit Tests:** Write unit tests for all functions, classes, and methods in the code, following these directives:
     *   Use the `pytest` framework.

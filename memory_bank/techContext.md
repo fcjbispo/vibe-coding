@@ -3,7 +3,7 @@
 This document outlines the technologies used, development setup, technical constraints, dependencies, and tool usage patterns.
 
 ## Technologies Used
-[List the primary programming languages, frameworks, databases, and other technologies used in the project.]
+[List the primary programming languages, frameworks, databases, and other technologies used in the project. Refer to `VIBE_ESPECIFICS_<LANGUAGE>.md` files for language-specific details.]
 
 ## Development Setup
 [Describe the necessary steps and tools for setting up the development environment.]
@@ -23,6 +23,14 @@ This section lists the original source files for sections within the `VIBE_GUIDE
 - **PART 1: GENERAL CONVENTIONS:** Originated from `CONVENTIONS.md`
 - **PART 2: AGENT'S MEMORY BANK:** Originated from `MEMORY_BANK.md`
 - **PART 3: VIBE - AI SOFTWARE DEVELOPMENT GUIDE:** Originated from `VIBE.md`
+
+## Language-Specific Guidelines References
+This section lists the files containing specific guidelines for different programming languages.
+
+- `VIBE_ESPECIFICS_PYTHON.md`
+- `VIBE_ESPECIFICS_JAVA.md`
+- `VIBE_ESPECIFICS_DOTNET.md`
+- `VIBE_ESPECIFICS_NODEJS_JAVASCRIPT.md`
 
 ## Memory Bank Initial Setup
 This section records the initial setup command for the memory bank.

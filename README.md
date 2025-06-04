@@ -6,17 +6,21 @@ This repository contains the configuration files, operational guidelines, and st
 
 The core components defining the agent's operation are:
 
-*   **`VIBE_GUIDE.md`**: The unified central guide outlining all operational guidelines, conventions, memory bank structure, SOLID principles, testing strategies, dependency management (`uv`), logging practices, operational modes, and specific task prompts. This is the primary instruction set.
+*   **`VIBE_GUIDE.md`**: The unified central guide outlining all operational guidelines, conventions, memory bank structure, SOLID principles, Clean Code principles, testing strategies, dependency management, logging practices, operational modes, and specific task prompts. This is the primary instruction set.
 *   **`VIBE_SUMMARY.md`**: Provides a summary of the Vibe prompts and a development flow diagram.
+*   **`VIBE_ESPECIFICS_PYTHON.md`**: Contains specific guidelines, examples, and tool references for Python development.
+*   **`VIBE_ESPECIFICS_JAVA.md`**: Contains specific guidelines, examples, and tool references for Java development.
+*   **`VIBE_ESPECIFICS_DOTNET.md`**: Contains specific guidelines, examples, and tool references for .NET development.
+*   **`VIBE_ESPECIFICS_NODEJS_JAVASCRIPT.md`**: Contains specific guidelines, examples, and tool references for Node.js/JavaScript development.
 
 ## Purpose
 
-The goal of this configuration is to ensure the AI agent operates consistently, efficiently, and according to best practices in software engineering. It provides a framework for:
+The goal of this configuration is to ensure the AI agent operates consistently, efficiently, and according to best practices in software engineering across various programming languages and platforms. It provides a framework for:
 
 *   **Planning:** Architecting new applications based on user requirements.
 *   **Coding:** Writing clean, documented, and type-hinted code.
 *   **Refactoring:** Improving existing code structure and maintainability.
-*   **Testing:** Implementing comprehensive unit tests using `pytest` with high coverage.
+*   **Testing:** Implementing comprehensive unit tests with high coverage.
 *   **Debugging:** Systematically diagnosing and resolving issues.
 *   **Documentation:** Maintaining clear and accurate project documentation.
 *   **Version Control:** Using `git` effectively for managing changes, including checkpointing.
@@ -25,12 +29,13 @@ The goal of this configuration is to ensure the AI agent operates consistently, 
 
 *   **Language:** Code and documentation are written in English. User interaction is in Brazilian Portuguese.
 *   **SOLID Principles:** Strictly followed in all code design.
-*   **Testing:** Emphasis on high code coverage (>=90%) using `pytest`.
-*   **Dependencies:** Managed using `uv`.
+*   **Clean Code:** Emphasis on readability, maintainability, and avoiding duplication.
+*   **Testing:** Emphasis on high code coverage (>=90%).
+*   **Dependencies:** Managed using appropriate tools for each language/platform.
 *   **Logging:** Integrated for debugging and monitoring.
-*   **Clean Code:** Focus on readability, maintainability, and avoiding duplication.
 
-Refer to the `VIBE_GUIDE.md` file for detailed specifications.
+Refer to the `VIBE_GUIDE.md` file for detailed specifications. For language-specific guidelines, consult the respective `VIBE_ESPECIFICS_<LANGUAGE>.md` files.
+
 This project is licensed under the MIT License. For the full text of the license, see [the official MIT License](https://opensource.org/licenses/MIT).
 
 ---
