@@ -8,10 +8,10 @@ The current focus is on evolving the `VIBE_GUIDE.md` to version 6, making it lan
 ## Recent Changes
 - Updated `VIBE_GUIDE.md` to be language-agnostic, removing Python-specific references.
 - Added Clean Code principles to `VIBE_GUIDE.md`.
-- Created `VIBE_ESPECIFICS_PYTHON.md` with Python-specific guidelines.
-- Created `VIBE_ESPECIFICS_JAVA.md` with Java-specific guidelines.
-- Created `VIBE_ESPECIFICS_DOTNET.md` with .NET-specific guidelines.
-- Created `VIBE_ESPECIFICS_NODEJS_JAVASCRIPT.md` with Node.js/JavaScript-specific guidelines.
+- Created `VIBE_SPECIFICS_PYTHON.md` with Python-specific guidelines.
+- Created `VIBE_SPECIFICS_JAVA.md` with Java-specific guidelines.
+- Created `VIBE_SPECIFICS_DOTNET.md` with .NET-specific guidelines.
+- Created `VIBE_SPECIFICS_NODEJS_JAVASCRIPT.md` with Node.js/JavaScript-specific guidelines.
 - Updated `VIBE_SUMMARY.md` to reflect language-agnostic changes and new specific files.
 - Updated `README.md` to reflect language-agnostic changes and new specific files.
 - Saved `VIBE_GUIDE.md` as `src/VIBE.005.md` as a backup.
@@ -22,7 +22,7 @@ The current focus is on evolving the `VIBE_GUIDE.md` to version 6, making it lan
 ## Active Decisions and Considerations
 - Ensure all memory bank files are consistent with the `VIBE_GUIDE.md` structure and content.
 - Maintain clarity and conciseness in all documentation.
-- Ensure proper cross-referencing between `VIBE_GUIDE.md` and `VIBE_ESPECIFICS_<LANGUAGE>.md` files.
+- Ensure proper cross-referencing between `VIBE_GUIDE.md` and `VIBE_SPECIFICS_<LANGUAGE>.md` files.
 
 ## Important Patterns and Preferences
 - Adherence to `VIBE_GUIDE.md` for all agent operations.

@@ -171,7 +171,7 @@ These are the guidelines and best practices to be followed across all tasks. **A
     *   **Error Handling:** Implement robust and explicit error handling mechanisms. Errors should be handled gracefully and provide clear feedback.
     *   **Minimal Comments:** Write self-documenting code. Use comments only to explain "why" a piece of code exists, not "what" it does.
     *   **Consistent Formatting:** Maintain a consistent code style and formatting throughout the codebase.
-6.  **Language-Specific Guidelines:** When a specific programming language or platform is provided for a task, always consult the corresponding `VIBE_ESPECIFICS_<LANGUAGE>.md` file (e.g., `VIBE_ESPECIFICS_PYTHON.md`, `VIBE_ESPECIFICS_JAVA.md`) for complementary instructions, tools, and best practices. If such a file is not explicitly referenced, search for it in the project's root directory.
+6.  **Language-Specific Guidelines:** When a specific programming language or platform is provided for a task, always consult the corresponding `VIBE_SPECIFICS_<LANGUAGE>.md` file (e.g., `VIBE_SPECIFICS_PYTHON.md`, `VIBE_SPECIFICS_JAVA.md`) for complementary instructions, tools, and best practices. If such a file is not explicitly referenced, search for it in the project's root directory.
 7.  **Environment and Dependency Management:**
     *   Use types (type hints) whenever possible. Verify and add missing or incorrect type hints.
     *   Prioritize using existing libraries over creating new code.

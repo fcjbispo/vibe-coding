@@ -1,4 +1,4 @@
-# VIBE ESPECIFICS - Python
+# VIBE SPECIFICS - Python
 
 Este documento contém diretrizes, exemplos de código e referências a ferramentas/bibliotecas específicas para a linguagem Python, extraídas do `VIBE_GUIDE.md`.
 
