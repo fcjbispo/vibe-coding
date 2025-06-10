@@ -11,15 +11,15 @@
     *   Ler o `VIBE_GUIDE.md` para identificar todas as referências explícitas e implícitas à linguagem Python, exemplos de código, ferramentas e bibliotecas específicas (e.g., `uv`, `pytest`, `pytest-cov`, `@pyproject.toml`).
     *   Extrair todo esse conteúdo para uma seção temporária.
 
-3.  **Criação do `VIBE_ESPECIFICS_PYTHON.md`:**
-    *   Criar o arquivo `VIBE_ESPECIFICS_PYTHON.md` na raiz do projeto.
+3.  **Criação do `VIBE_SPECIFICS_PYTHON.md`:**
+    *   Criar o arquivo `VIBE_SPECIFICS_PYTHON.md` na raiz do projeto.
     *   Categorizar e elencar o conteúdo extraído de Python neste novo arquivo, referenciando os itens correspondentes no `VIBE_GUIDE.md` original.
 
 4.  **Criação dos Arquivos de Especificação para Outras Linguagens:**
     *   Criar os seguintes arquivos na raiz do projeto, com uma estrutura inicial que indique que serão preenchidos com diretrizes específicas para cada linguagem:
-        *   `VIBE_ESPECIFICS_JAVA.md`
-        *   `VIBE_ESPECIFICS_DOTNET.md`
-        *   `VIBE_ESPECIFICS_NODEJS_JAVASCRIPT.md`
+        *   `VIBE_SPECIFICS_JAVA.md`
+        *   `VIBE_SPECIFICS_DOTNET.md`
+        *   `VIBE_SPECIFICS_NODEJS_JAVASCRIPT.md`
 
 5.  **Modificação do `VIBE_GUIDE.md` (Tornar Agnóstico à Linguagem):**
     *   Substituir todas as referências explícitas/implícitas a Python por termos agnósticos à linguagem (e.g., "ambiente virtual" por "ambiente de desenvolvimento isolado", "gerenciador de pacotes" por "ferramenta de gerenciamento de dependências").
@@ -56,10 +56,10 @@
 graph TD
     A[Início da Tarefa] --> B{Backup VIBE_GUIDE.md};
     B --> C[Analisar e Extrair Conteúdo Python];
-    C --> D[Criar VIBE_ESPECIFICS_PYTHON.md];
-    D --> E[Criar VIBE_ESPECIFICS_JAVA.md];
-    E --> F[Criar VIBE_ESPECIFICS_DOTNET.md];
-    F --> G[Criar VIBE_ESPECIFICS_NODEJS_JAVASCRIPT.md];
+    C --> D[Criar VIBE_SPECIFICS_PYTHON.md];
+    D --> E[Criar VIBE_SPECIFICS_JAVA.md];
+    E --> F[Criar VIBE_SPECIFICS_DOTNET.md];
+    F --> G[Criar VIBE_SPECIFICS_NODEJS_JAVASCRIPT.md];
     G --> H[Modificar VIBE_GUIDE.md (Agnóstico e Clean Code)];
     H --> I[Atualizar VIBE_SUMMARY.md];
     I --> J[Atualizar README.md];

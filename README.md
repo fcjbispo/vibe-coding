@@ -8,10 +8,10 @@ The core components defining the agent's operation are:
 
 *   **`VIBE_GUIDE.md`**: The unified central guide outlining all operational guidelines, conventions, memory bank structure, SOLID principles, Clean Code principles, testing strategies, dependency management, logging practices, operational modes, and specific task prompts. This is the primary instruction set.
 *   **`VIBE_SUMMARY.md`**: Provides a summary of the Vibe prompts and a development flow diagram.
-*   **`VIBE_ESPECIFICS_PYTHON.md`**: Contains specific guidelines, examples, and tool references for Python development.
-*   **`VIBE_ESPECIFICS_JAVA.md`**: Contains specific guidelines, examples, and tool references for Java development.
-*   **`VIBE_ESPECIFICS_DOTNET.md`**: Contains specific guidelines, examples, and tool references for .NET development.
-*   **`VIBE_ESPECIFICS_NODEJS_JAVASCRIPT.md`**: Contains specific guidelines, examples, and tool references for Node.js/JavaScript development.
+*   **`VIBE_SPECIFICS_PYTHON.md`**: Contains specific guidelines, examples, and tool references for Python development.
+*   **`VIBE_SPECIFICS_JAVA.md`**: Contains specific guidelines, examples, and tool references for Java development.
+*   **`VIBE_SPECIFICS_DOTNET.md`**: Contains specific guidelines, examples, and tool references for .NET development.
+*   **`VIBE_SPECIFICS_NODEJS_JAVASCRIPT.md`**: Contains specific guidelines, examples, and tool references for Node.js/JavaScript development.
 
 ## Purpose
 
@@ -34,7 +34,7 @@ The goal of this configuration is to ensure the AI agent operates consistently, 
 *   **Dependencies:** Managed using appropriate tools for each language/platform.
 *   **Logging:** Integrated for debugging and monitoring.
 
-Refer to the `VIBE_GUIDE.md` file for detailed specifications. For language-specific guidelines, consult the respective `VIBE_ESPECIFICS_<LANGUAGE>.md` files.
+Refer to the `VIBE_GUIDE.md` file for detailed specifications. For language-specific guidelines, consult the respective `VIBE_SPECIFICS_<LANGUAGE>.md` files.
 
 This project is licensed under the MIT License. For the full text of the license, see [the official MIT License](https://opensource.org/licenses/MIT).
 
