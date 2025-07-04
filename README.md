@@ -33,6 +33,7 @@ The goal of this configuration is to ensure the AI agent operates consistently, 
 *   **Testing:** Emphasis on high code coverage (>=90%).
 *   **Dependencies:** Managed using appropriate tools for each language/platform.
 *   **Logging:** Integrated for debugging and monitoring.
+*   **MCP Server Usage:** Leverages MCP (Model Context Protocol) servers for extended capabilities when available.
 
 Refer to the `VIBE_GUIDE.md` file for detailed specifications. For language-specific guidelines, consult the respective `VIBE_SPECIFICS_<LANGUAGE>.md` files.
 

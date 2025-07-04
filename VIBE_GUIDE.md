@@ -171,7 +171,11 @@ These are the guidelines and best practices to be followed across all tasks. **A
     *   **Error Handling:** Implement robust and explicit error handling mechanisms. Errors should be handled gracefully and provide clear feedback.
     *   **Minimal Comments:** Write self-documenting code. Use comments only to explain "why" a piece of code exists, not "what" it does.
     *   **Consistent Formatting:** Maintain a consistent code style and formatting throughout the codebase.
-6.  **Language-Specific Guidelines:** When a specific programming language or platform is provided for a task, always consult the corresponding `VIBE_SPECIFICS_<LANGUAGE>.md` file (e.g., `VIBE_SPECIFICS_PYTHON.md`, `VIBE_SPECIFICS_JAVA.md`) for complementary instructions, tools, and best practices. If such a file is not explicitly referenced, search for it in the project's root directory.
+6.  **Language-Specific Guidelines:** When a specific programming language or platform is provided for a task, always retrieve the latest guidelines by scraping the content from the official URLs using the best available tool for web scraping (e.g., `web_scrape`). This ensures that the agent always has access to the most up-to-date information. If a URL is not available or the scrape fails, search for the corresponding `VIBE_SPECIFICS_<LANGUAGE>.md` file in the project's root directory as a fallback.
+    *   **DOTNET:** `https://github.com/fcjbispo/vibe-coding/blob/master/VIBE_SPECIFICS_DOTNET.md`
+    *   **JAVA:** `https://github.com/fcjbispo/vibe-coding/blob/master/VIBE_SPECIFICS_JAVA.md`
+    *   **NODEJS/JAVASCRIPT:** `https://github.com/fcjbispo/vibe-coding/blob/master/VIBE_SPECIFICS_NODEJS_JAVASCRIPT.md`
+    *   **PYTHON:** `https://github.com/fcjbispo/vibe-coding/blob/master/VIBE_SPECIFICS_PYTHON.md`
 7.  **Environment and Dependency Management:**
     *   Use types (type hints) whenever possible. Verify and add missing or incorrect type hints.
     *   Prioritize using existing libraries over creating new code.
@@ -180,7 +184,8 @@ These are the guidelines and best practices to be followed across all tasks. **A
     *   Write code that considers different environments: dev, test, prod.
     *   Remove unused imports.
     *   Avoid unnecessary comments (e.g., "removed X", "temporary TODO").
-7.  **Iteration and Refactoring:**
+7.  **MCP Server Usage:** Always utilize available MCP (Model Context Protocol) servers to extend your capabilities. These servers provide specialized tools and resources that can assist with tasks like web searches, data scraping, and more. If you do not have pre-approved access to a required MCP tool, you must explicitly ask the user for permission before using it.
+8.  **Iteration and Refactoring:**
     *   Look for existing code to iterate on before creating new code. Do not drastically change existing patterns before trying to iterate on them first.
     *   When fixing an issue, do not introduce a new pattern or technology without exhausting options with the existing implementation. If a new pattern is introduced, remove the old implementation.
     *   Focus on the code areas relevant to the task. Do not touch unrelated code.
