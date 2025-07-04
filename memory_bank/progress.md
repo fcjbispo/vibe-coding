@@ -3,14 +3,13 @@
 This document tracks what works, what's left to build, current status, known issues, and the evolution of project decisions.
 
 ## Current Status
-The `VIBE_GUIDE.md` has been updated to version 6, making it language-agnostic, incorporating Clean Code principles, and creating language-specific guideline files. All related documentation (`VIBE_SUMMARY.md`, `README.md`, and `memory_bank` files) have been updated accordingly.
+The `VIBE_GUIDE.md` has been updated to version 6.2. This release introduces dynamic fetching of language-specific guidelines from URLs and adds a new directive for using MCP (Model Context Protocol) servers. All related documentation (`README.md` and memory bank files) has been updated to reflect these changes.
 
 ## What Works
-- `VIBE_GUIDE.md` is now language-agnostic, with Python-specific details moved to `VIBE_SPECIFICS_PYTHON.md`.
-- Clean Code principles have been integrated into `VIBE_GUIDE.md`.
-- Dedicated `VIBE_SPECIFICS_JAVA.md`, `VIBE_SPECIFICS_DOTNET.md`, and `VIBE_SPECIFICS_NODEJS_JAVASCRIPT.md` files have been created.
-- `VIBE_SUMMARY.md` and `README.md` reflect the new structure and content.
-- Memory bank files (`activeContext.md`, `techContext.md`) are updated to align with V6.
+- `VIBE_GUIDE.md` now instructs agents to dynamically retrieve language-specific guidelines from official URLs.
+- A new section on MCP Server Usage has been added to `VIBE_GUIDE.md`.
+- `README.md` has been updated to include MCP server usage as a key principle.
+- Memory bank files (`activeContext.md`, `progress.md`, `techContext.md`) are updated to align with v6.2.
 
 ## What's Left to Build
 - [List any remaining features or tasks for the project.]
